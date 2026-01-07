@@ -82,10 +82,47 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
     width: 60%;
 }
 
-/* Video Grid */
-.video-container-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-.video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; }
-.video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+/* Video Grid - Größere Darstellung und bessere Abstände */
+.video-container-grid { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); /* 2 Spalten auf Desktop */
+    gap: 40px; /* Deutlich mehr Abstand zwischen den Videos */
+    margin-top: 40px; /* Mehr Abstand zum Titel "YouTube Videos" */
+    max-width: 1000px; /* Begrenzt die Gesamtbreite, damit sie nicht zu extrem gestreckt werden */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-wrapper { 
+    position: relative; 
+    padding-bottom: 56.25%; /* Hält das 16:9 Format bei */
+    height: 0; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Optional: Ein leichter Schatten lässt sie hochwertiger wirken */
+}
+
+.video-wrapper iframe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    border: none; 
+}
+
+/* Titel-Abstand korrigieren */
+.sub-title {
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Mobil-Ansicht für Videos */
+@media (max-width: 768px) {
+    .video-container-grid { 
+        grid-template-columns: 1fr; /* Auf dem Handy untereinander */
+        gap: 25px;
+        padding: 0 5%;
+    }
+}
 
 /* Hero & General */
 .hero { height: 75vh; background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('Joseph\ Woelfl\ Portrait.jpg') center/cover; display: flex; align-items: center; justify-content: center; color: white; text-align: center; margin-top: 70px; }
@@ -124,6 +161,7 @@ footer a { color: var(--gold); text-decoration: none; margin: 0 10px; }
     .nav-active { transform: translateX(0%); }
     .image-box { width: 100%; }
     .hero h1 { font-size: 1.8rem; }
+    .video-container-grid { grid-template-columns: 1fr; } /* Mobil wieder einspaltig */
 }
 
 .toggle .line1 { transform: rotate(-45deg) translate(-5px, 6px); }
