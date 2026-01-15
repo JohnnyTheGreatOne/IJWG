@@ -172,3 +172,105 @@ footer a { color: var(--gold); text-decoration: none; margin: 0 10px; }
     from { opacity: 0; transform: translateX(50px); }
     to { opacity: 1; transform: translateX(0px); }
 }
+/* ... DEIN BESTEHENDER CODE ... */
+
+/* NEU: Smooth Scroll Reveal Logik */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* NEU: Timeline Styling */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px 0;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #e0e0e0;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+.timeline-item {
+    padding: 15px 50px;
+    position: relative;
+    width: 50%;
+    text-align: right;
+}
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+.timeline-dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: -8px;
+    background: var(--gold);
+    border-radius: 50%;
+    top: 25px;
+    z-index: 10;
+}
+.timeline-item:nth-child(even) .timeline-dot {
+    left: -8px;
+}
+.timeline-date {
+    font-weight: bold;
+    color: var(--gold);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.timeline-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+    .timeline::after { left: 31px; }
+    .timeline-item { width: 100%; padding-left: 70px; text-align: left; }
+    .timeline-item:nth-child(even) { left: 0; }
+    .timeline-dot { left: 23px !important; }
+}
+
+/* ... DEIN RESTLICHER CODE ... */
+.timeline-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 1px solid #ddd;
+}
+.timeline-img:hover {
+    transform: scale(1.03);
+}
+
+.event-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.besetzung-box {
+    background: #fdfaf3;
+    padding: 30px;
+    border-left: 5px solid var(--gold);
+    line-height: 1.6;
+}
