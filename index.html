@@ -8,6 +8,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Spezifische Styling-Ergänzungen für die Abstände */
+        .event-block-vorschau {
+            margin-bottom: 20px;
+        }
+
+        .elegant-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #b39a5b, transparent);
+            width: 60%;
+            margin: 120px auto; /* Sehr großzügiger Abstand zwischen den Blöcken */
+            border: none;
+        }
+
+        .event-subtitle {
+            margin-bottom: 50px;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #333;
+            letter-spacing: 1px;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,7 +42,8 @@
         </div>
         
         <ul class="nav-links">
-            <li><a href="#team">Team</a></li>
+            <li><a href="#historie">Historie</a></li>
+            <li><a href="#team">Vorstand</a></li>
             <li><a href="#events">Veranstaltungen</a></li>
             <li><a href="#media">Medien</a></li>
             <li><a href="#presse">Presse</a></li>
@@ -38,13 +63,13 @@
     </nav>
 
     <header class="hero">
-        <div class="hero-content">
+        <div class="hero-content reveal">
             <h1>Internationale Joseph Woelfl Gesellschaft</h1>
             <p>Sitz: Straßwalchen, Salzburg (Österreich)</p>
         </div>
     </header>
 
-    <section id="woelfl" class="section">
+    <section id="woelfl" class="section reveal">
         <h2 class="gold-line">Joseph Woelfl (1773–1812)</h2>
         <div class="content-text">
             <p>Geboren in Salzburg, war der Zeitgenosse von Mozart und Beethoven einer der erfolgreichsten Komponisten seiner Zeit. Er war als Komponist und Pianist unter anderem Wegbereiter von Chopin und Liszt. In seiner Wiener Zeit trat er gemeinsam mit Beethoven auf, vollzog aber hauptsächlich eine europaweite Karriere, die auf Empfehlung Mozarts in Warschau begann und ihn über Paris nach London führte, wo er zum damals bestverdienenden Komponisten weltweit avancierte.<br><br>
@@ -52,7 +77,128 @@
         </div>
     </section>
 
-    <section id="team" class="section">
+    <section id="historie" class="section">
+        <h2 class="gold-line reveal">Historie & Meilensteine</h2>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2011</div>
+                <div class="timeline-content">
+                    <h3>Gründung</h3>
+                    <p>Gründung der Gesellschaft in Wien durch Prof. Dr. Margit Haider-Dechant.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Mai 2022</div>
+                <div class="timeline-content">
+                    <h3>Sitzverlegung</h3>
+                    <p>Beschluss der Generalversammlung zur Verlegung des Vereinssitzes von Wien nach Straßwalchen.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Juli 2022</div>
+                <div class="timeline-content">
+                    <h3>Erste Joseph Woelfl Gala</h3>
+                    <img src="Woelfl_Gala_2022.jpeg" alt="Woelfl Gala" class="timeline-img zoomable" data-description="Erste Woelfl Gala in der Pfarrkirche Straßwalchen">
+                    <p>Erste Gala in der Pfarrkirche Straßwalchen. Franz Bachleitner wird zum Präsidenten gewählt.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Dezember 2022</div>
+                <div class="timeline-content">
+                    <h3>Das Woelfl-Haus</h3>
+                    <img src="Woelflhaus_Aussen.png" alt="Woelfl-Haus" class="timeline-img zoomable" data-description="Das Woelfl-Haus Straßwalchen">
+                    <p>Offizieller Bezug des Vereinssitzes im Woelfl-Haus (Café Bachmaier) in Straßwalchen.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Mai 2023</div>
+                <div class="timeline-content">
+                    <h3>Symposium & Gedenktafel</h3>
+                    <img src="Woelfl Grabplatte.jpg" alt="Gedenktafel" class="timeline-img zoomable" data-description="Enthüllung der Gedenktafel">
+                    <p>Durchführung des VI. Internationalen Symposiums und feierliche Enthüllung der Johann-Paul-Woelfl Gedenktafel.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Juli 2023</div>
+                <div class="timeline-content">
+                    <h3>Jubiläum in Leopoldskron</h3>
+                    <img src="Pressekonferenz_Leopoldskron.jpg" alt="PK Leopoldskron" class="timeline-img zoomable" data-description="Pressekonferenz Schloss Leopoldskron">
+                    <p>Pressekonferenz zum 250. Geburtstag Joseph Woelfls in Schloss Leopoldskron.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">22. Okt. 2023</div>
+                <div class="timeline-content">
+                    <h3>Berliner Philharmonie</h3>
+                    <img src="BPH.jpg" alt="Berlin" class="timeline-img zoomable" data-description="Konzert in der Berliner Philharmonie">
+                    <p>Erfolgreiches Konzert zu Ehren Joseph Woelfls in der Berliner Philharmonie.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">15. Dez. 2023</div>
+                <div class="timeline-content">
+                    <h3>CD-Release</h3>
+                    <img src="Woelfl CD.png" alt="Woelfl CD" class="timeline-img zoomable" data-description="CD Joseph Woelfl In Concert">
+                    <p>Erscheinung der CD „Joseph Woelfl In Concert“.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Dezember 2023</div>
+                <div class="timeline-content">
+                    <h3>Konzert im Mozarteum</h3>
+                    <img src="Woelfl Moz.jpg" alt="Mozarteum" class="timeline-img zoomable" data-description="Konzert Joseph Woelfl, der unbekannte Salzburger">
+                    <p>Festkonzert im Mozarteum Salzburg unter dem Titel „Joseph Woelfl, der unbekannte Salzburger“.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">08.–10. März 2024</div>
+                <div class="timeline-content">
+                    <h3>Woelfl Tage Straßwalchen</h3>
+                    <img src="Woelfl Tage 3.png" alt="Woelfl Tage" class="timeline-img zoomable" data-description="Woelfl Tage 2024">
+                    <p>Drei Tage im Zeichen Woelfls mit Konzerten und wissenschaftlichem Austausch.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">August 2024</div>
+                <div class="timeline-content">
+                    <h3>Woelfl-Bibliothek</h3>
+                    <img src="Woelfl_Bibliothek.jpg" alt="Bibliothek" class="timeline-img zoomable" data-description="Eröffnung der Bibliothek">
+                    <p>Eröffnung der Forschungsbibliothek im Lagermarkt Straßwalchen am 31. August.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Dezember 2024</div>
+                <div class="timeline-content">
+                    <h3>Geburtstagsfeier Pernerinsel</h3>
+                    <img src="Pernerinsel.jpeg" alt="Pernerinsel" class="timeline-img zoomable" data-description="Weihnachtliche Geburtstagsfeier">
+                    <p>Weihnachtliches Konzert zu Ehren des 250. Geburtstags von Woelfl auf der Festspielbühne Pernerinsel in Hallein.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">April 2025</div>
+                <div class="timeline-content">
+                    <h3>Woelfl Matinee</h3>
+                    <img src="Woelfl Matinee.png" alt="Matinee" class="timeline-img zoomable" data-description="Woelfl Matinee St. Georgen">
+                    <p>Woelfl Matinee im Harnoncourt-Saal in St. Georgen im Attergau.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section reveal">
         <h2 class="gold-line">Vorstand</h2>
         <div class="team-grid">
             <div class="member-card">
@@ -66,10 +212,6 @@
             <div class="member-card">
                 <div class="portrait-placeholder"><img src="Dominik Sedivy Foto.jpg" alt="Dr. Dominik Šedivý" class="zoomable" data-description="Dr. Dominik Šedivý - Vizepräsident"></div>
                 <strong>Dr. Dominik Šedivý</strong><p>Vizepräsident</p>
-            </div>
-            <div class="member-card">
-                <div class="portrait-placeholder"><img src="Helga Rabl-Stadler Foto.jpg" alt="Helga Rabl-Stadler" class="zoomable" data-description="Dr. Helga Rabl-Stadler - Schirmherrschaft"></div>
-                <strong>Dr. Helga Rabl-Stadler</strong><p>Schirmherrschaft</p>
             </div>
             <div class="member-card">
                 <div class="portrait-placeholder"><img src="Gajo Foto.jpg" alt="Mag. Josef Gassner-Uphues" class="zoomable" data-description="Mag. Josef Gassner-Uphues - Kassier"></div>
@@ -89,7 +231,7 @@
             </div>
             <div class="member-card">
                 <div class="portrait-placeholder"><img src="Sebastian Leitl Foto.jpg" alt="Sebastian Leitl" class="zoomable" data-description="Sebastian Leitl - Öffentlichkeitsarbeit"></div>
-                <strong>Sebastian Leitl</strong><p>Öffentlichkeitsarbeit, Vizebürgermeister Straßwalchen</p>
+                <strong>Sebastian Leitl</strong><p>Öffentlichkeitsarbeit</p>
             </div>
             <div class="member-card">
                 <div class="portrait-placeholder"><img src="Helmut Gugerbauer Foto.jpg" alt="Helmut Gugerbauer" class="zoomable" data-description="Helmut Gugerbauer - Woelfl Bibliothek"></div>
@@ -100,51 +242,71 @@
                 <strong>Qi Su</strong><p>Beirat</p>
             </div>
             <div class="member-card">
-                <div class="portrait-placeholder"><img src="Götz Foto.jpg" alt="Götz Teutsch" class="zoomable" data-description="Goetz Teutsch - Rechnungsprüfer"></div>
+                <div class="portrait-placeholder"><img src="Götz Foto.jpg" alt="Götz Teutsch" class="zoomable" data-description="Götz Teutsch - Rechnungsprüfer"></div>
                 <strong>Götz Teutsch</strong><p>Rechnungsprüfer</p>
             </div>
         </div>
     </section>
 
-    <section id="events" class="section bg-light">
+    <section id="events" class="section bg-light reveal">
         <h2 class="gold-line">Veranstaltungen</h2>
-
-        <div class="event-entry">
-            <h3>Pressekonferenz in Leopoldskron</h3>
-            <p class="event-meta">04. Juli 2023</p>
-            <div class="content-text">
-                <div>
-                    <p>Pressekonferenz in Leopoldskron (Salzburg) zu Ehren des 250. Geburtstags Joseph Woelfls.</p>
-                    <p>In den Salzburger Nachrichten erschien hierzu ein spannender Artikel:<br>
-                    <strong><a href="https://www.sn.at/kultur/musik/in-salzburg-soll-es-staerker-woelfln-art-501842" target="_blank">In Salzburg soll es stärker „woelfln“.</a></strong></p>
-                </div>
-                <div class="photo-grid-events">
-                    <div class="image-box">
-                        <img src="PK LK.jpg" alt="PK LK" class="zoomable" data-description="Von links nach rechts: Prof. Dr. Hermann Dechant, Präsident Franz Bachleitner, Prof. Cordelia Höfer-Teutsch, Dr. Helga Rabl-Stadler und Prof. Dr. Margit Haider-Dechant">
-                        <p class="img-caption">Von links nach rechts: Prof. Dr. Hermann Dechant, Präsident Franz Bachleitner, Prof. Cordelia Höfer-Teutsch, Dr. Helga Rabl-Stadler und Prof. Dr. Margit Haider-Dechant</p>
+        
+        <div class="event-block-vorschau">
+            <h3 class="event-subtitle">Vorschau & Termine</h3>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-content">
+                        <span class="news-date">Ende Mai</span>
+                        <h3>Woelfl Tage</h3>
+                        <p>Konzert inkl. Vorträge Musikschule Straßwalchen und Pfarrsaal.</p>
                     </div>
-                    <div class="image-box">
-                        <img src="LeopoldskronPK-23.jpg" alt="LeopoldskronPK-23" class="zoomable" data-description="Präsident Franz Bachleitner im Gespräch mit Dr. Helga Rabl-Stadler">
-                        <p class="img-caption">Präsident Franz Bachleitner im Gespräch mit Dr. Helga Rabl-Stadler</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-content">
+                        <span class="news-date">In Planung</span>
+                        <h3>Konzert im Schloss Wildshut</h3>
+                        <p>Kammermusikabend in historischem Ambiente.</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-content">
+                        <span class="news-date">22. November 2026</span>
+                        <h3>Lecture & Konzerte Wien</h3>
+                        <p>Wissenschaftliche Lecture und Konzerte zum Werk Joseph Woelfls.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <hr class="section-divider-large">
+        <div class="elegant-divider"></div>
 
-        <div class="event-entry">
-            <h3>VI. Internationales Joseph-Woelfl-Symposium & Festkonzert</h3>         
+        <div class="event-block-rueckblick">
+            <h3 class="event-subtitle">Rückblick & Impressionen</h3>
+            
+            <div class="event-details-grid">
+                <div class="event-column">
+                    <h3><i class="fas fa-microscope"></i> VI. Symposium</h3>
+                    <p><strong>Mai 2023</strong><br>Eröffnung und wissenschaftliche Vorträge im Pfarrzentrum Straßwalchen.</p>
+                </div>
+                <div class="event-column">
+                    <h3><i class="fas fa-music"></i> Festkonzert</h3>
+                    <p><strong>Mai 2023</strong><br>Konzert mit dem <strong>Minetti-Quartett</strong> in der Pfarrkirche Straßwalchen.</p>
+                </div>
+                <div class="event-column">
+                    <h3><i class="fas fa-church"></i> Festmesse</h3>
+                    <p><strong>Mai 2023</strong><br>Festmesse mit anschließender Enthüllung der Johann-Paul-Woelfl Gedenktafel.</p>
+                </div>
+            </div>
+
             <div class="speech-container">
                 <div class="speech-quote">
                     <p>Sehr geehrte Gäste!</p>
-                    <p>Non plus ultra – einfach unübertrefflich – diese selbstbewusste Selbsteinschätzung stellte Joseph Woelfl einem seiner besonders fordernden Werke, einer Klaviersonate voran. Zu Selbstbewusstsein hatte der junge Mann mit Straßwalchner Wurzeln jede Berechtigung. War er doch als Pianist, als Komponist und Musiklehrer gleichermaßen wirkmächtig und ob in Wien, Warschau, Paris oder London eine echte Berühmtheit. Nur bei uns und heute ist er eher ein Geheimtipp für Fachleute, vielleicht auch weil Mozarts Genie alles und alle überstrahlt. Das soll jetzt anders werden. Die Internationale Joseph Woelfl Gesellschaft hat richtig erkannt, dass sie in Straßwalchen mehr Aufmerksamkeit auf sich ziehen kann, als in der Großstadt und hat ihren Sitz von Wien hierher verlegt. Jetzt gilt es die Chance zu ergreifen, unserem Land Salzburg, diesem Leuchtturm im europäischen Musikgeschehen, weitere Strahlkraft hinzuzufügen. Wenn in England angeblich auf jedem Piano Woelfl-Noten liegen, so könnte ein ähnlicher Ruck von Straßwalchen ausgehen. Das Werk Woelfls muss im allgemeinen Musik- und Konzertleben jene Bedeutung zurück erhalten, welche die Kompositionen von Wolfgang Amadeus Mozart und Michael Haydn auszeichnet. Ich bin der festen Überzeugung, dass dies Musikliebhaber und Liebhaberinnen in aller Welt genießen werden. <br><br>
-                    Aber, was genauso wichtig ist, auch die Bewohner und Bewohnerinnen von Straßwalchen werden einen weiteren Grund bekommen auf ihren schönen geschichtsträchtigen Ort stolz zu sein. Kunst und Kultur geben gerade in unseren so orientierungslosen Zeiten einen sicheren Kompass. Sie verleihen einer Region Identität und Selbstwertgefühl mitten im unüberschaubaren, unberechenbaren Weltgeschehen. Kulinarisch habt ihr ja den Wettstreit mit Mozart schon aufgenommen und bietet mit der Woelfl-Torte der Mozartkugel süße Konkurrenz.</p>
+                    <p>Non plus ultra – einfach unübertrefflich. So hieß das berühmte Klavierstück Joseph Woelfls, das er 1807 in London schrieb. Unübertrefflich ist auch sein Weg, den er gegangen ist. Ein echter Europäer, dessen Wurzeln hier in Straßwalchen liegen. Die Stadt Salzburg ist stolz auf Mozart, aber wir dürfen jene nicht vergessen, die mit ihm und nach ihm die Welt der Musik geprägt haben. War er doch als Pianist, als Komponist und Musiklehrer gleichermaßen wirkmächtig und ob in Wien, Warschau, Paris oder London eine echte Berühmtheit. Nur bei uns und heute ist er eher ein Geheimtipp für Fachleute. Das soll jetzt anders werden. Das Werk Woelfls muss im allgemeinen Musik- und Konzertleben jene Bedeutung zurück erhalten, welche die Kompositionen von Wolfgang Amadeus Mozart und Michael Haydn auszeichnet. Ich bin der festen Überzeugung, dass dies Musikliebhaber und Liebhaberinnen in aller Welt genießen werden.</p>
+                    <p>Es ist mir eine Ehre, als Schirmherrin dieses Symposiums und der Enthüllung der Gedenktafel für Johann Paul Woelfl fungieren zu dürfen. Möge Joseph Woelfl durch die Arbeit dieser Gesellschaft jenen Platz in der Musikgeschichte zurückerhalten, der ihm gebührt.</p>
                     <div class="speech-footer">
-                        <img src="Helga Rabl-Stadler Foto.jpg" alt="Dr. Helga Rabl-Stadler" class="speech-portrait zoomable" data-description="Dr. Helga Rabl-Stadler - Langzeitpräsidentin der Salzburger Festspiele">
+                        <img src="Helga Rabl-Stadler Foto.jpg" alt="Dr. Helga Rabl-Stadler" class="speech-portrait zoomable" data-description="Dr. Helga Rabl-Stadler">
                         <div class="speech-author-info">
-                            <p>Viel Erfolg!</p>
-                            <p><strong>Helga Rabl-Stadler</strong><br><small>Langzeitpräsidentin der Salzburger Festspiele von 1995 bis 2021</small></p>
+                            <p><strong>Dr. Helga Rabl-Stadler - Schirmherrin der IJWG</strong><br><small>Langzeitpräsidentin der Salzburger Festspiele (1995–2021)</small></p>
                         </div>
                     </div>
                 </div>
@@ -152,35 +314,39 @@
         </div>
     </section>
 
-    <section id="media" class="section">
+    <section id="media" class="section reveal">
         <h2 class="gold-line">Medien</h2>
-        
-        <h3 class="sub-title">YouTube Videos</h3>
         <div class="video-container-grid">
-            <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/KFxjpISsX9M" allowfullscreen></iframe></div>
-            <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/AU-MCaThb7w" allowfullscreen></iframe></div>
+            <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/du60c6bMmsI" allowfullscreen></iframe></div>
+            <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/AU-MCaThb7w?start=16" allowfullscreen></iframe></div>
             <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/7X4faJoXmoE" allowfullscreen></iframe></div>
             <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/xJUVTBXyoe8" allowfullscreen></iframe></div>
-            <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/nKXmizyunFM" allowfullscreen></iframe></div>
+            <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/DJ2nf1W8d-0" allowfullscreen></iframe></div>
             <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/CERH0Dd1FeA" allowfullscreen></iframe></div>
         </div>
-
-        <h3 class="sub-title" style="margin-top: 60px;">Fotogalerie</h3>
         <div class="photo-gallery">
-            <img src="Pernerinsel.jpeg" alt="Pernerinsel" class="zoomable" data-description="Weihnachtliches Konzert auf der Pernerinsel Hallein zu Ehren des 250. Geburtstags von Joseph Woelfl 2024">
-            <img src="Zhao & Zech Pernerinsel.jpeg" alt="Pernerinsel 2" class="zoomable" data-description="Klavierduo Johann Zhao & Karim Zech - Fernsehbeitrag im RTS über das Woelfl-Konzert auf der Pernerinsel 2024">
-            <img src="Woelfl Tage.jpg" alt="Woelfl Tage" class="zoomable" data-description="Werner Karlinger, Prof. Cordelia Höfer-Teutsch und Co. im Gespräch bei den Woelfl-Tagen 2024">
-            <img src="Woelfl Tage 2.jpg" alt="Woelfl Tage 2" class="zoomable" data-description="Seminar im Pfarrsaal Straßwalchen während der Woelfl-Tage 2024">
-            <img src="Woelfl Tage 3.png" alt="Woelfl Tage 3" class="zoomable" data-description="Pianistinnen im Gespräch: Keiko Hattori, Emese Badi, Minka Popović und Prof. Cordelia Höfer-Teutsch im Gespräch über Woelfl bei den Woelfl-Tagen 2024">
-            <img src="BPH.jpg" alt="BPH" class="zoomable" data-description="Woelfl-Konzert in der Berliner Philharmonie mit Prof. Cordelia Höfer-Teutsch">
-            <img src="BPH 2.jpg" alt="BPH 2" class="zoomable" data-description="Götz Teutsch bei einer Rede über Woelfl">
-            <img src="BK.jpg" alt="BK" class="zoomable" data-description="Benefizkonzert 2023 mit Helmut Gugerbauer und Klavierduopartnerin">
-            </div>
+            <img src="Pernerinsel.jpeg" alt="Pernerinsel" class="zoomable" data-description="Weihnachtskonzert Pernerinsel 2024">
+            <img src="Zhao & Zech Pernerinsel.jpeg" alt="Pianisten" class="zoomable" data-description="Johann Zhao & Karim Zech">
+            <img src="Woelfl Tage.jpg" alt="Woelfl Tage" class="zoomable" data-description="Impressionen Woelfl Tage">
+            <img src="Woelfl Tage 2.jpg" alt="Woelfl Tage" class="zoomable" data-description="Vorträge 2024">
+            <img src="Woelfl Tage 3.png" alt="Woelfl Tage" class="zoomable" data-description="Pianistinnen im Gespräch">
+            <img src="BPH.jpg" alt="Berlin" class="zoomable" data-description="Berliner Philharmonie">
+            <img src="BPH 2.jpg" alt="Berlin" class="zoomable" data-description="Vortrag in Berlin">
+            <img src="BK.jpg" alt="Konzert" class="zoomable" data-description="Benefizkonzert 2023">
+        </div>
     </section>
 
-    <section id="presse" class="section bg-light">
+    <section id="presse" class="section bg-light reveal">
         <h2 class="gold-line">Presse</h2>
         <div class="news-grid">
+            <article class="news-card">
+                <div class="news-content">
+                    <span class="news-date">Salzburger Nachrichten</span>
+                    <h3>In Salzburg soll es stärker „woelfln“</h3>
+                    <p>Ein Bericht über die Pressekonferenz zum 250. Geburtstag in Schloss Leopoldskron.</p>
+                    <a href="SN-Artikel.jpeg" target="_blank" class="btn-text">Zum PDF-Dokument →</a>
+                </div>
+            </article>
             <article class="news-card">
                 <div class="news-content">
                     <span class="news-date">Ö1 Radio</span>
@@ -193,28 +359,20 @@
                 <div class="news-content">
                     <span class="news-date">DIE WELT</span>
                     <h3>Er verdiente mehr als Beethoven...</h3>
-                    <p>Ein Bericht über den finanziellen und künstlerischen Erfolg Woelfls im Vergleich zu seinen Zeitgenossen.</p>
+                    <p>Bericht über den Erfolg Woelfls in Europa.</p>
                     <a href="https://www.welt.de/kultur/article249033252/Komponist-Joseph-Woelfl-Er-verdiente-mehr-als-Beethoven-Mozart-und-Haydn-zusammen.html" target="_blank" class="btn-text">Zum Artikel →</a>
-                </div>
-            </article>
-            <article class="news-card">
-                <div class="news-content">
-                    <span class="news-date">Salzburger Nachrichten</span>
-                    <h3>Straßwalchen hat viel vor</h3>
-                    <p>Wie der Ort seinen berühmten Sohn Joseph Woelfl ehrt und was für die Zukunft geplant ist.</p>
-                    <a href="https://www.sn.at/salzburg/chronik/joseph-woelfl-mit-seinem-beruehmten-sohn-hat-strasswalchen-noch-viel-vor-art-455679" target="_blank" class="btn-text">Zum Artikel →</a>
                 </div>
             </article>
         </div>
     </section>
 
-    <section id="contact" class="section bg-dark">
+    <section id="contact" class="section bg-dark reveal">
         <h2 class="gold-line white">Kontakt</h2>
         <div class="contact-info">
             <p><strong>Internationale Joseph-Woelfl-Gesellschaft</strong></p>
-            <p>Woelfl-Haus Straßwalchen aka Café Bachmaier</p>
+            <p>Woelfl-Haus Straßwalchen (Café Bachmaier)</p>
             <p>Salzburger Straße 6, 5204 Straßwalchen, Österreich</p>
-            <p style="margin-top: 25px;">Email: <a href="mailto:office@ijwg.at" style="color: var(--gold);">office@ijwg.at</a></p>
+            <p>Email: <a href="mailto:office@ijwg.at" style="color: var(--gold);">office@ijwg.at</a></p>
         </div>
     </section>
 
@@ -236,17 +394,29 @@
             <span class="close" onclick="closeModal('impressum')">&times;</span>
             <h2>Impressum</h2>
             <div class="modal-body">
-                <h3>Informationen gemäß § 5 ECG und Offenlegung gemäß § 25 Mediengesetz</h3>
-                <p><strong>Internationale Joseph-Woelfl-Gesellschaft (IJWG)</strong></p>
-                <p><strong>ZVR-Zahl:</strong> 08739954</p>
-                <p><strong>Sitz:</strong> Straßwalchen</p>
-                <p><strong>Zustellanschrift:</strong> Salzburger Straße 6, 5204 Straßwalchen, Österreich</p>
-                <p><strong>E-Mail:</strong> office@ijwg.at</p>
-                <p><strong>Vereinszweck:</strong> Förderung des Werkes von Joseph Woelfl durch Forschung, Publikationen und Veranstaltungen.</p>
-                <h3>Vertretungsbefugte Organe</h3>
-                <p>Präsident: Franz Bachleitner, MAS<br>Vizepräsidentin: Prof. Cordelia Höfer-Teutsch<br>Vizepräsident: Dr. Dominik Šedivý</p>
-                <h3>Haftungsausschluss</h3>
-                <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+                <h3>Kontaktdaten</h3>
+                <p>Internationale Joseph-Woelfl-Gesellschaft, ZVR 08739954<br>
+                Woelfl-Haus Straßwalchen aka Café Bachmaier, Salzburger Straße 6, 5204 Straßwalchen, Österreich<br>
+                E-Mail-Adresse: office@ijwg.at</p>
+                
+                <h3>Bankverbindung</h3>
+                <p>Internationale Joseph Woelfl Gesellschaft<br>
+                IBAN: AT45 3506 2000 0016 9524<br>
+                BIC: RVSAAT2S062</p>
+
+                <h3>Online-Streitbeilegung</h3>
+                <p>Verbraucher haben die Möglichkeit, Beschwerden an die Online-Streitbeilegungsplattform der EU zu richten: <a href="http://ec.europa.eu/odr" target="_blank">http://ec.europa.eu/odr</a>.<br>
+                Sie können allfällige Beschwerden auch an die oben angegebene E-Mail-Adresse richten.</p>
+
+                <h3>Haftung für Inhalte dieser Website</h3>
+                <p>Wir entwickeln die Inhalte dieser Webseite kontinuierlich weiter und bemühen uns, korrekte und aktuelle Informationen bereitstellen. Leider können wir keine Haftung für die Korrektheit aller Inhalte auf dieser Webseite übernehmen, speziell für jene, die seitens Dritter bereitgestellt wurden.<br>
+                Sollten Ihnen problematische oder rechtswidrige Inhalte auffallen, bitten wir Sie uns umgehend zu kontaktieren.</p>
+
+                <h3>Haftung für Links auf dieser Website</h3>
+                <p>Unsere Webseite enthält Links zu anderen Webseiten, für deren Inhalt wir nicht verantwortlich sind. Wenn Ihnen rechtswidrige Links auf unserer Website auffallen, bitten wir Sie uns zu kontaktieren.</p>
+
+                <h3>Urheberrechtshinweis</h3>
+                <p>Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos) unterliegen dem Urheberrecht. Falls notwendig, werden wir die unerlaubte Nutzung von Teilen der Inhalte unserer Seite rechtlich verfolgen.</p>
             </div>
         </div>
     </div>
@@ -256,14 +426,21 @@
             <span class="close" onclick="closeModal('datenschutz')">&times;</span>
             <h2>Datenschutzerklärung</h2>
             <div class="modal-body">
-                <h3>1. Datenschutz auf einen Blick</h3>
-                <p>Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften (DSGVO). Die Nutzung unserer Website ist in der Regel ohne Angabe personenbezogener Daten möglich.</p>
-                <h3>2. Datenerfassung</h3>
-                <p>Personenbezogene Daten (wie Name oder E-Mail-Adresse) werden auf dieser Seite nur auf freiwilliger Basis (z.B. per E-Mail-Anfrage) erhoben. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.</p>
-                <h3>3. Ihre Rechte</h3>
-                <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.</p>
-                <h3>4. YouTube</h3>
-                <p>Unsere Website nutzt Plugins der von Google betriebenen Seite YouTube. Betreiber der Seiten ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. Wenn Sie eine unserer mit einem YouTube-Plugin ausgestatteten Seiten besuchen, wird eine Verbindung zu den Servern von YouTube hergestellt.</p>
+                <h3>Wer wir sind</h3>
+                <p>Die Adresse unserer Website ist: https://ijwg.at/<br>
+                Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2003). In diesen Datenschutzinformationen informieren wir Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen unserer Website.<br>
+                Beim Besuch unserer Webseite wird Ihre IP-Adresse, Beginn und Ende der Sitzung für die Dauer dieser Sitzung erfasst. Dies ist technisch bedingt und stellt damit ein berechtigtes Interesse iSv Art 6 Abs 1 lit f DSGVO dar. Soweit im Folgenden nichts anderes geregelt wird, werden diese Daten von uns nicht weiterverarbeitet.</p>
+
+                <h3>Kontakt mit uns</h3>
+                <p>Wenn Sie Kontakt mit uns aufnehmen, werden Ihre angegebenen Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen sechs Monate bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+
+                <h3>Cookies</h3>
+                <p>Unsere Website verwendet sogenannte Cookies. Dabei handelt es sich um kleine Textdateien, die mit Hilfe des Browsers auf Ihrem Endgerät abgelegt werden. Sie richten keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende Ihres Besuchs automatisch wieder gelöscht.<br>
+                Wir nutzen Cookies dazu, unser Angebot nutzerfreundlich zu gestalten. Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen.<br>
+                Wenn Sie dies nicht wünschen, so können Sie Ihren Browser so einrichten, dass er Sie über das Setzen von Cookies informiert und Sie dies nur im Einzelfall erlauben.</p>
+
+                <h3>Ihre Rechte</h3>
+                <p>Ihnen stehen bezüglich Ihrer bei uns gespeicherten Daten grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich bei uns oder der Datenschutzbehörde beschweren.</p>
             </div>
         </div>
     </div>
