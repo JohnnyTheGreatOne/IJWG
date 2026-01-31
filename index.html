@@ -31,6 +31,69 @@
             color: #333;
             letter-spacing: 1px;
         }
+
+        /* Styling für den neuen Mitgliedschaftsbereich */
+        .membership-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .membership-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #b39a5b;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .membership-btn:hover {
+            background-color: #8c763f;
+        }
+
+        /* Styling für die Partner-Logos im Footer */
+        .partner-section {
+            padding: 40px 0;
+            background-color: #111; /* Schwarz/Dunkel passend zum Footer */
+            color: #fff;
+            text-align: center;
+            border-top: 1px solid #333; /* Dunkle Trennlinie */
+        }
+
+        .partner-section h3 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            color: #b39a5b; /* Gold für die Überschrift */
+            font-family: 'Playfair Display', serif;
+        }
+
+        .partner-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .partner-logo {
+            height: 60px;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+            /* Kein Grayscale mehr, Originalfarben bleiben erhalten */
+        }
+
+        .partner-logo:hover {
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -48,8 +111,8 @@
             <li><a href="#media">Medien</a></li>
             <li><a href="#presse">Presse</a></li>
             <li><a href="https://www.apollon-musikoffizin.de/writer/joseph-woelfl/" target="_blank">Noten</a></li>
+            <li><a href="#mitgliedschaft">Mitgliedschaft</a></li>
             <li><a href="#contact">Kontakt</a></li>
-            <li><a href="https://www.woelflhaus.de/" target="_blank">Woelfl-Haus Bonn ↗</a></li>
             <li class="yt-nav-link">
                 <a href="https://www.youtube.com/@IJWG_Strasswalchen" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
             </li>
@@ -374,6 +437,21 @@
         </div>
     </section>
 
+    <section id="mitgliedschaft" class="section reveal">
+        <h2 class="gold-line">Mitglied werden</h2>
+        <div class="membership-content">
+            <p>Werden Sie Teil einer internationalen Gemeinschaft, die sich der Pflege und Wiederentdeckung des musikalischen Erbes von Joseph Woelfl widmet. Unterstützen Sie Forschung, Konzerte und Publikationen und tragen Sie dazu bei, diesen bedeutenden Sohn Salzburgs wieder ins Bewusstsein der Musikwelt zu rücken.</p>
+            <br>
+            <p><strong>Mitgliedsbeitrag:</strong><br>
+            Erwachsene: € 50 pro Jahr<br>
+            Schüler, Studenten & Pensionisten: € 25 pro Jahr</p>
+            <br>
+            <p>Bitte füllen Sie das Beitrittsformular aus und senden Sie es unterschrieben per E-Mail an <a href="mailto:office@ijwg.at" style="color: #b39a5b;">office@ijwg.at</a></p>
+            
+            <a href="IJWG_Mitgliedsformular.pdf" class="membership-btn" download><i class="fas fa-file-pdf"></i> Beitrittsformular herunterladen</a>
+        </div>
+    </section>
+
     <section id="contact" class="section bg-dark reveal">
         <h2 class="gold-line white">Kontakt</h2>
         <div class="contact-info">
@@ -385,6 +463,17 @@
     </section>
 
     <footer>
+        <div class="partner-section">
+            <h3>Unsere Partner & Förderer</h3>
+            <div class="partner-grid">
+                <img src="Buergervereinigung.jpg" alt="Partner 1" class="partner-logo">
+                <img src="Kultutrvereinigung_Logo-2.png" alt="Partner 2" class="partner-logo">
+                <img src="Autohaus_Reiser.jpg" alt="Partner 3" class="partner-logo">
+                <img src="MAMG_quer.jpg" alt="Partner 4" class="partner-logo">
+                <img src="tvb-strasswalchen-4c-scaled.jpg" alt="Partner 5" class="partner-logo">
+            </div>
+        </div>
+
         <p>&copy; 2026 IJWG | 
            <a href="javascript:void(0)" onclick="openModal('impressum')">Impressum</a> | 
            <a href="javascript:void(0)" onclick="openModal('datenschutz')">Datenschutzerklärung</a>
